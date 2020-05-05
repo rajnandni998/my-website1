@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolut</title>
+    <!-- css position;;; relative static(default) absolute sticky fixed -->
+    <style>
+        .menu{
+            border:2px solid green;
+            background-color: blanchedalmond;
+            height:3444px;
+        }
+        .box{
+            border:2px solid red;
+            width:200px;
+            height:150px;
+            margin:2px;
+            display: inline-block;
+        }
+        #box3{
+            /* relative to its normal position and leave gap at its normal positon */
+            /* position: relative; */
+            /* position: absolute; */
+            /* postion absolute: to the positon to  its parents */
+            /* top:34px; */
+            /* left:34px; */
+            position:fixed;
+            /* fixed  position the elements relative to the browser window */
+            /* right:4px; */
+            /* bottom:2px; */
+            position: sticky;
+            top:3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3">chat with us</div>
+    <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
